@@ -94,6 +94,7 @@ spacelift-poc/
 - helm (Kubernetes package manager)
 - terraform (Infrastructure as Code)
 - spacectl (Spacelift CLI)
+- aws (AWS CLI, used to bootstrap LocalStack IAM)
 - openssl (SSL certificate generation)
 
 **Installation guides provided in setup.sh for all platforms (macOS/Linux/Windows)**

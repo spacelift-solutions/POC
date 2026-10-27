@@ -19,14 +19,15 @@ This repository provides a complete Spacelift Proof-of-Concept environment that 
 
 Before starting, ensure you have these tools installed:
 
-| Tool                                                              | Purpose | Installation |
-|-------------------------------------------------------------------|---------|-------------|
-| [Docker Desktop](https://www.docker.com/products/docker-desktop/) | Container runtime | Download from official site |
-| [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/)           | Kubernetes in Docker | `brew install kind` (macOS) |
-| [kubectl](https://kubernetes.io/docs/tasks/tools/)                | Kubernetes CLI | `brew install kubectl` (macOS) |
-| [Helm](https://helm.sh/docs/intro/install/)                       | Kubernetes package manager | `brew install helm` (macOS) |
-| [OpenTofu](https://opentofu.org/docs/intro/install/)              | Infrastructure as Code | `brew install opentofu` (macOS) |
-| [SpaceCTL](https://docs.spacelift.io/concepts/spacectl)           | Spacelift management | `brew install spacelift-io/spacelift/spacectl` (macOS) |
+| Tool                                                                                     | Purpose | Installation |
+|------------------------------------------------------------------------------------------|---------|-------------|
+| [Docker Desktop](https://www.docker.com/products/docker-desktop/)                        | Container runtime | Download from official site |
+| [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/)                                  | Kubernetes in Docker | `brew install kind` (macOS) |
+| [kubectl](https://kubernetes.io/docs/tasks/tools/)                                       | Kubernetes CLI | `brew install kubectl` (macOS) |
+| [Helm](https://helm.sh/docs/intro/install/)                                              | Kubernetes package manager | `brew install helm` (macOS) |
+| [OpenTofu](https://opentofu.org/docs/intro/install/)                                     | Infrastructure as Code | `brew install opentofu` (macOS) |
+| [SpaceCTL](https://docs.spacelift.io/concepts/spacectl)                                  | Spacelift management | `brew install spacelift-io/spacelift/spacectl` (macOS) |
+| [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) | LocalStack IAM setup | `brew install awscli` (macOS) |
 
 > **Note**: The setup script will validate all prerequisites and provide installation guidance for missing tools.
 

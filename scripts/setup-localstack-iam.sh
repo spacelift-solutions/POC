@@ -34,6 +34,16 @@ error() {
     echo -e "${RED}✗ $1${NC}"
 }
 
+# Check if the AWS CLI is installed
+check_aws_cli() {
+    if ! command -v aws >/dev/null 2>&1; then
+        error "AWS CLI is not installed. Install it and try again."
+        error "macOS: brew install awscli"
+        error "Other platforms: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
+        exit 1
+    fi
+}
+
 # Check if LocalStack is running
 check_localstack() {
     log "Checking LocalStack availability..."
@@ -189,7 +199,9 @@ cleanup() {
 # Main execution
 main() {
     log "Starting LocalStack IAM setup for Spacelift integration"
-    
+
+    check_aws_cli
+
     # Set AWS credentials for LocalStack
     export AWS_ACCESS_KEY_ID=test
     export AWS_SECRET_ACCESS_KEY=test

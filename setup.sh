@@ -150,6 +150,7 @@ main() {
     check_command "helm"
     check_command "tofu"
     check_command "spacectl"
+    check_command "aws"
     print_success "All prerequisites are installed"
     
     # Check if Docker is running
