@@ -80,6 +80,12 @@ check_command() {
                 echo "  - Linux: https://github.com/spacelift-io/spacectl#installation"
                 echo "  - Windows: https://github.com/spacelift-io/spacectl#installation"
                 ;;
+            "aws")
+                echo "Installation guides:"
+                echo "  - macOS: brew install awscli"
+                echo "  - Linux: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
+                echo "  - Windows: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
+                ;;
             "openssl")
                 echo "Installation guides:"
                 echo "  - macOS: Usually pre-installed, or brew install openssl"
